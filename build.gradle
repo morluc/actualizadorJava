@@ -1,0 +1,11 @@
+apply plugin: 'java'
+
+dependencies {
+    compile files('libs/async-http-client-2.1.2.jar')
+}
+
+jar {
+    manifest {
+        attributes ('Main-Class': 'actualizador.ui')
+    }
+}
